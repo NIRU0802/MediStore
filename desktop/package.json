@@ -1,0 +1,14 @@
+{
+  "name": "pharmadesk-desktop",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "clean": "rmdir /s /q target 2>nul || true",
+    "tauri": "tauri",
+    "tauri:dev": "tauri dev",
+    "tauri:build": "powershell -Command \"Remove-Item -Recurse -Force target -ErrorAction SilentlyContinue; Start-Sleep -Seconds 5; Remove-Item -Recurse -Force target -ErrorAction SilentlyContinue; Start-Sleep -Seconds 3; cargo clean 2>$null; Start-Sleep -Seconds 2; tauri build\""
+  },
+  "dependencies": {
+    "@tauri-apps/cli": "^1.5.0"
+  }
+}

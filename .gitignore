@@ -1,0 +1,61 @@
+# Dependencies
+node_modules/
+*/node_modules/
+**/node_modules/
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+
+# Desktop build artifacts
+src-tauri/target/
+*.exe
+*.msi
+*.dmg
+*.AppImage
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+backend/database/*.db
+backend/database/*.sqlite
+
+# Reports and backups (these are generated)
+reports/
+backups/
+*.pdf
+
+# Environment files
+.env
+.env.local
+.env.production
+backend/.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temp files
+nul
+*.tmp
+*.cache
+
+# Rust
+**/*.rs.bk
+Cargo.lock
